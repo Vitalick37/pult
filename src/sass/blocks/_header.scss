@@ -1,0 +1,43 @@
+.header {
+    @include flex-box();
+    margin-bottom: 40px;
+
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: #A89365;
+        margin-right: 8px;
+    }
+
+    &__link {
+        @include flex-box();
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #A89365;
+        &:hover {
+            color: #8B4513;
+            
+        }
+        &:active {
+            color: #A89365;
+        }
+
+    }
+
+    &__img {
+        margin-left: 8px;
+    }
+}
+
+.header__link:hover .header__svg {
+    fill: #8B4513;
+}
+.header__link:active .header__svg {
+    fill: #A89365;
+}
